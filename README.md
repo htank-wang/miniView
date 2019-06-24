@@ -25,9 +25,9 @@ var miniview = new MiniView({
 
 ## more than examples
 
-- [demo](demo/)
-- [demo1](demo1/)
-- [demo2](demo2/)
+- [demo](demo.html)
+- [demo1](demo1.html)
+- [demo2](demo2.html)
 
 ## License
 
