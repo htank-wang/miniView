@@ -4,15 +4,18 @@
 
 JQuery based Brids eye, Navigator, Min map.
 
-# support
+## support
 
 - ie9+
 - commonjs
 - es6
 
-# Snapshot
+## Snapshot
+![image](https://github.com/htank-wang/miniView/blob/master/Snapshot/1.jpg)
+![image](https://github.com/htank-wang/miniView/blob/master/Snapshot/2.jpg)
+![image](https://github.com/htank-wang/miniView/blob/master/Snapshot/3.jpg)
 
-# Usage
+## Usage
 
 ```javascript
 var miniview = new MiniView({
@@ -20,8 +23,12 @@ var miniview = new MiniView({
 });
 ```
 
-# more than examples
+## more than examples
 
 - [demo](demo/)
 - [demo1](demo1/)
 - [demo2](demo2/)
+
+## License
+
+MIT
