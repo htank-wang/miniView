@@ -1,0 +1,668 @@
+<html>
+  <head></head>
+  <link rel="stylesheet" href="./miniView.css" />
+  <link rel="stylesheet" href="./flow.css" />
+  <style>
+    * {
+      color: #666;
+    }
+    .chart-wrap {
+      position: relative;
+      /* width: 600px; */
+      height: 600px;
+      width: 1600px;
+      overflow: hidden;
+      border: 1px solid red;
+    }
+  </style>
+  <script></script>
+  <body>
+    <button id="zoomIn">zoom in</button> <button id="zoomOut">zoom out</button>
+    <div class="chart-wrap">
+      <div
+        class="flowchart null joint-paper joint-theme-default"
+        style="opacity: 1; width: 490px; height: 900px; "
+      >
+        <div class="start-node" title="Start" style="left: 215px; top: 0px;">
+          <div class="txt">
+            Start
+            <div></div>
+          </div>
+        </div>
+        <div
+          class="flownode COMPLETED"
+          id="firstTaskSpelStepDemo1"
+          style="left: 135px; top: 110px;"
+        >
+          <div class="header">
+            <i class="status tk-iconfont icon-completed"></i
+            ><span class="nm" title="step1">step1</span
+            ><i class="tk-iconfont icon-spel" title="spel"></i>
+          </div>
+          <div class="content">
+            <p>
+              <i class="tk-iconfont icon-run"></i>Start:
+              <span class="start-time">2019-06-19 08:40:24</span>
+            </p>
+            <p>
+              <i class="tk-iconfont icon-stop"></i>End:
+              <span class="end-time">2019-06-19 08:40:34</span>
+            </p>
+          </div>
+        </div>
+        <div
+          class="flownode STOPPED"
+          id="firstTaskSpringBeanStepDemo"
+          style="left: 135px; top: 270px;"
+        >
+          <div class="header">
+            <i class="status tk-iconfont icon-nostart"></i
+            ><span class="nm" title="step2"
+              >step2</span
+            ><i class="tk-iconfont icon-springBean" title="springBean"></i>
+          </div>
+          <div class="content">
+            <p>
+              <i class="tk-iconfont icon-run"></i>Start:
+              <span class="start-time">2019-06-19 08:40:34</span>
+            </p>
+            <p>
+              <i class="tk-iconfont icon-stop"></i>End:
+              <span class="end-time">2019-06-19 08:40:44</span>
+            </p>
+          </div>
+        </div>
+        <div class="spe-node" title="Parallel" style="left: 225px; top: 430px;">
+          <div class="txt">
+            Parallel
+            <div></div>
+          </div>
+        </div>
+        <div
+          class="flownode"
+          id="firstTaskDatabaseProcNodeDemo1"
+          style="left: 0px; top: 520px;"
+        >
+          <div class="header">
+            <span class="nm" title="This is step3"
+              >This is step3</span
+            ><i class="tk-iconfont icon-dbproc" title="dbproc"></i>
+          </div>
+          <div class="content">
+            <p>
+              <i class="tk-iconfont icon-run"></i>Start:
+              <span class="start-time"></span>
+            </p>
+            <p>
+              <i class="tk-iconfont icon-stop"></i>End:
+              <span class="end-time"></span>
+            </p>
+          </div>
+        </div>
+        <div
+          class="flownode"
+          id="firstTaskDatabaseProcNodeDemo2"
+          style="left: 0px; top: 680px;"
+        >
+          <div class="header">
+            <span class="nm" title="This is step4"
+              >This is step4</span
+            ><i class="tk-iconfont icon-dbproc" title="dbproc"></i>
+          </div>
+          <div class="content">
+            <p>
+              <i class="tk-iconfont icon-run"></i>Start:
+              <span class="start-time"></span>
+            </p>
+            <p>
+              <i class="tk-iconfont icon-stop"></i>End:
+              <span class="end-time"></span>
+            </p>
+          </div>
+        </div>
+        <div
+          class="flownode"
+          id="firstTaskKettleTransNodeDemo"
+          style="left: 270px; top: 680px;"
+        >
+          <div class="header">
+            <span class="nm" title="This is step5"
+              >This is step5</span
+            ><i class="tk-iconfont icon-kettleTrans" title="kettleTrans"></i>
+          </div>
+          <div class="content">
+            <p>
+              <i class="tk-iconfont icon-run"></i>Start:
+              <span class="start-time"></span>
+            </p>
+            <p>
+              <i class="tk-iconfont icon-stop"></i>End:
+              <span class="end-time"></span>
+            </p>
+          </div>
+        </div>
+        <div class="end-node" title="End" style="left: 215px; top: 840px;">
+          <div class="txt">
+            End
+            <div></div>
+          </div>
+        </div>
+        <div class="joint-paper-background"></div>
+        <div class="joint-paper-grid"></div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          version="1.1"
+          id="v-214"
+          width="100%"
+          height="100%"
+        >
+          <defs id="v-216">
+            <marker
+              id="v-214-1620978148"
+              orient="auto"
+              overflow="visible"
+              markerUnits="userSpaceOnUse"
+            >
+              <path
+                id="v-243"
+                stroke="none"
+                fill="gray"
+                transform="rotate(180)"
+                d="M 6 -6 0 0 6 6 z"
+              ></path>
+            </marker>
+          </defs>
+          <g id="v-215" class="joint-viewport">
+            <g
+              model-id="a71ec122-ead5-4cd5-8d67-87682cd662c5"
+              id="j_88"
+              class="joint-cell joint-type-flow joint-type-flow-link joint-link joint-theme-default"
+              data-type="flow.Link"
+            >
+              <path
+                fill="none"
+                joint-selector="line"
+                id="v-251"
+                stroke="gray"
+                stroke-width="1"
+                pointer-events="none"
+                d="M 380 790 L 380 805 C 380 811.6666666666665 377 816.3333333333333 371 819 L 275 857.78"
+                marker-end="url(#v-214-1620978148)"
+              ></path>
+            </g>
+            <g
+              model-id="1a848848-00b7-4b0e-9e54-66d4f86a7d59"
+              id="j_87"
+              class="joint-cell joint-type-flow joint-type-flow-link joint-link joint-theme-default"
+              data-type="flow.Link"
+            >
+              <path
+                fill="none"
+                joint-selector="line"
+                id="v-250"
+                stroke="gray"
+                stroke-width="1"
+                pointer-events="none"
+                d="M 265 456.67 L 371 492 C 377 494 380 498.3333333333333 380 505 L 380 565 C 380 571.6666666666666 380 578.3333333333333 380 585 L 380 645 C 380 651.6666666666666 380 658.3333333333333 380 665 L 380 680"
+                marker-end="url(#v-214-1620978148)"
+              ></path>
+            </g>
+            <g
+              model-id="2326de74-b3d4-4056-9416-8103646dd3a5"
+              id="j_86"
+              class="joint-cell joint-type-flow joint-type-flow-link joint-link joint-theme-default"
+              data-type="flow.Link"
+            >
+              <path
+                fill="none"
+                joint-selector="line"
+                id="v-249"
+                stroke="gray"
+                stroke-width="1"
+                pointer-events="none"
+                d="M 110 790 L 110 805 C 110 811.6666666666665 113 816.3333333333333 119 819 L 215 857.78"
+                marker-end="url(#v-214-1620978148)"
+              ></path>
+            </g>
+            <g
+              model-id="48ebaaf3-b07c-4cde-9b2c-faad69b7ff5d"
+              id="j_85"
+              class="joint-cell joint-type-flow joint-type-flow-link joint-link joint-theme-default"
+              data-type="flow.Link"
+            >
+              <path
+                fill="none"
+                joint-selector="line"
+                id="v-248"
+                stroke="gray"
+                stroke-width="1"
+                pointer-events="none"
+                d="M 110 630 L 110 645 C 110 651.6666666666666 110 658.3333333333333 110 665 L 110 680"
+                marker-end="url(#v-214-1620978148)"
+              ></path>
+            </g>
+            <g
+              model-id="805b81f0-3256-4c37-9af5-1c67b4376f6d"
+              id="j_84"
+              class="joint-cell joint-type-flow joint-type-flow-link joint-link joint-theme-default"
+              data-type="flow.Link"
+            >
+              <path
+                fill="none"
+                joint-selector="line"
+                id="v-247"
+                stroke="gray"
+                stroke-width="1"
+                pointer-events="none"
+                d="M 225 456.67 L 119 492 C 113 494 110 498.3333333333333 110 505 L 110 520"
+                marker-end="url(#v-214-1620978148)"
+              ></path>
+            </g>
+            <g
+              model-id="db49b11c-781a-48ad-b1b4-099a32a1d6fd"
+              id="j_83"
+              class="joint-cell joint-type-flow joint-type-flow-link joint-link joint-theme-default"
+              data-type="flow.Link"
+            >
+              <path
+                fill="none"
+                joint-selector="line"
+                id="v-246"
+                stroke="gray"
+                stroke-width="1"
+                pointer-events="none"
+                d="M 245 380 L 245 395 C 244.99999999999997 401.66666666666663 244.99999999999997 408.3333333333333 245 415 L 245 430"
+                marker-end="url(#v-214-1620978148)"
+              ></path>
+            </g>
+            <g
+              model-id="9ecbc41f-9533-4393-aa61-349b8a30e244"
+              id="j_82"
+              class="joint-cell joint-type-flow joint-type-flow-link joint-link joint-theme-default"
+              data-type="flow.Link"
+            >
+              <path
+                fill="none"
+                joint-selector="line"
+                id="v-245"
+                stroke="gray"
+                stroke-width="1"
+                pointer-events="none"
+                d="M 245 220 L 245 235 C 244.99999999999997 241.66666666666663 244.99999999999997 248.33333333333331 245 255 L 245 270"
+                marker-end="url(#v-214-1620978148)"
+              ></path>
+            </g>
+            <g
+              model-id="581155e1-9f5d-4af4-8822-2a7968e2ec98"
+              id="j_81"
+              class="joint-cell joint-type-flow joint-type-flow-link joint-link joint-theme-default"
+              data-type="flow.Link"
+            >
+              <path
+                fill="none"
+                joint-selector="line"
+                id="v-242"
+                stroke="gray"
+                stroke-width="1"
+                pointer-events="none"
+                d="M 245 60 L 245 75 C 244.99999999999997 81.66666666666666 244.99999999999997 88.33333333333333 245 95 L 245 110"
+                marker-end="url(#v-214-1620978148)"
+              ></path>
+            </g>
+            <g
+              model-id="02b411af-9c53-45a8-8121-f5d44df2ce0a"
+              id="j_80"
+              class="joint-cell joint-type-html joint-type-html-element joint-element joint-theme-default"
+              data-type="html.Element"
+              fill="#ffffff"
+              stroke="none"
+              transform="translate(215,0)"
+            >
+              <g class="rotatable" id="v-239">
+                <g class="scalable" transform="scale(0.6,1)">
+                  <rect
+                    id="v-240"
+                    stroke="none"
+                    fill-opacity="0"
+                    fill="#ffffff"
+                    width="100"
+                    height="60"
+                  ></rect>
+                </g>
+                <text
+                  id="v-241"
+                  font-size="14"
+                  xml:space="preserve"
+                  display="none"
+                  y="0.8em"
+                  fill="#000000"
+                  text-anchor="middle"
+                  font-family="Arial, helvetica, sans-serif"
+                  transform="matrix(1,0,0,1,30,30)"
+                >
+                  <tspan
+                    dy="0"
+                    style="fill-opacity: 0; stroke-opacity: 0;"
+                    class="v-line v-empty-line"
+                  >
+                    -
+                  </tspan>
+                </text>
+              </g>
+            </g>
+            <g
+              model-id="firstTaskSpelStepDemo1"
+              id="j_79"
+              class="joint-cell joint-type-html joint-type-html-element joint-element joint-theme-default"
+              data-type="html.Element"
+              fill="#ffffff"
+              stroke="none"
+              transform="translate(135,110)"
+            >
+              <g class="rotatable" id="v-236">
+                <g class="scalable" transform="scale(2.2,1.8333333333333333)">
+                  <rect
+                    id="v-237"
+                    stroke="none"
+                    fill-opacity="0"
+                    fill="#ffffff"
+                    width="100"
+                    height="60"
+                  ></rect>
+                </g>
+                <text
+                  id="v-238"
+                  font-size="14"
+                  xml:space="preserve"
+                  display="none"
+                  y="0.8em"
+                  fill="#000000"
+                  text-anchor="middle"
+                  font-family="Arial, helvetica, sans-serif"
+                  transform="matrix(1,0,0,1,110,55)"
+                >
+                  <tspan
+                    dy="0"
+                    style="fill-opacity: 0; stroke-opacity: 0;"
+                    class="v-line v-empty-line"
+                  >
+                    -
+                  </tspan>
+                </text>
+              </g>
+            </g>
+            <g
+              model-id="firstTaskSpringBeanStepDemo"
+              id="j_78"
+              class="joint-cell joint-type-html joint-type-html-element joint-element joint-theme-default"
+              data-type="html.Element"
+              fill="#ffffff"
+              stroke="none"
+              transform="translate(135,270)"
+            >
+              <g class="rotatable" id="v-233">
+                <g class="scalable" transform="scale(2.2,1.8333333333333333)">
+                  <rect
+                    id="v-234"
+                    stroke="none"
+                    fill-opacity="0"
+                    fill="#ffffff"
+                    width="100"
+                    height="60"
+                  ></rect>
+                </g>
+                <text
+                  id="v-235"
+                  font-size="14"
+                  xml:space="preserve"
+                  display="none"
+                  y="0.8em"
+                  fill="#000000"
+                  text-anchor="middle"
+                  font-family="Arial, helvetica, sans-serif"
+                  transform="matrix(1,0,0,1,110,55)"
+                >
+                  <tspan
+                    dy="0"
+                    style="fill-opacity: 0; stroke-opacity: 0;"
+                    class="v-line v-empty-line"
+                  >
+                    -
+                  </tspan>
+                </text>
+              </g>
+            </g>
+            <g
+              model-id="parallelNode1"
+              id="j_77"
+              class="joint-cell joint-type-html joint-type-html-element joint-element joint-theme-default"
+              data-type="html.Element"
+              fill="#ffffff"
+              stroke="none"
+              transform="translate(225,430)"
+            >
+              <g class="rotatable" id="v-230">
+                <g class="scalable" transform="scale(0.4,0.6666666666666666)">
+                  <rect
+                    id="v-231"
+                    stroke="none"
+                    fill-opacity="0"
+                    fill="#ffffff"
+                    width="100"
+                    height="60"
+                  ></rect>
+                </g>
+                <text
+                  id="v-232"
+                  font-size="14"
+                  xml:space="preserve"
+                  display="none"
+                  y="0.8em"
+                  fill="#000000"
+                  text-anchor="middle"
+                  font-family="Arial, helvetica, sans-serif"
+                  transform="matrix(1,0,0,1,20,20)"
+                >
+                  <tspan
+                    dy="0"
+                    style="fill-opacity: 0; stroke-opacity: 0;"
+                    class="v-line v-empty-line"
+                  >
+                    -
+                  </tspan>
+                </text>
+              </g>
+            </g>
+            <g
+              model-id="firstTaskDatabaseProcNodeDemo1"
+              id="j_76"
+              class="joint-cell joint-type-html joint-type-html-element joint-element joint-theme-default"
+              data-type="html.Element"
+              fill="#ffffff"
+              stroke="none"
+              transform="translate(0,520)"
+            >
+              <g class="rotatable" id="v-227">
+                <g class="scalable" transform="scale(2.2,1.8333333333333333)">
+                  <rect
+                    id="v-228"
+                    stroke="none"
+                    fill-opacity="0"
+                    fill="#ffffff"
+                    width="100"
+                    height="60"
+                  ></rect>
+                </g>
+                <text
+                  id="v-229"
+                  font-size="14"
+                  xml:space="preserve"
+                  display="none"
+                  y="0.8em"
+                  fill="#000000"
+                  text-anchor="middle"
+                  font-family="Arial, helvetica, sans-serif"
+                  transform="matrix(1,0,0,1,110,55)"
+                >
+                  <tspan
+                    dy="0"
+                    style="fill-opacity: 0; stroke-opacity: 0;"
+                    class="v-line v-empty-line"
+                  >
+                    -
+                  </tspan>
+                </text>
+              </g>
+            </g>
+            <g
+              model-id="firstTaskDatabaseProcNodeDemo2"
+              id="j_75"
+              class="joint-cell joint-type-html joint-type-html-element joint-element joint-theme-default"
+              data-type="html.Element"
+              fill="#ffffff"
+              stroke="none"
+              transform="translate(0,680)"
+            >
+              <g class="rotatable" id="v-224">
+                <g class="scalable" transform="scale(2.2,1.8333333333333333)">
+                  <rect
+                    id="v-225"
+                    stroke="none"
+                    fill-opacity="0"
+                    fill="#ffffff"
+                    width="100"
+                    height="60"
+                  ></rect>
+                </g>
+                <text
+                  id="v-226"
+                  font-size="14"
+                  xml:space="preserve"
+                  display="none"
+                  y="0.8em"
+                  fill="#000000"
+                  text-anchor="middle"
+                  font-family="Arial, helvetica, sans-serif"
+                  transform="matrix(1,0,0,1,110,55)"
+                >
+                  <tspan
+                    dy="0"
+                    style="fill-opacity: 0; stroke-opacity: 0;"
+                    class="v-line v-empty-line"
+                  >
+                    -
+                  </tspan>
+                </text>
+              </g>
+            </g>
+            <g
+              model-id="firstTaskKettleTransNodeDemo"
+              id="j_74"
+              class="joint-cell joint-type-html joint-type-html-element joint-element joint-theme-default"
+              data-type="html.Element"
+              fill="#ffffff"
+              stroke="none"
+              transform="translate(270,680)"
+            >
+              <g class="rotatable" id="v-221">
+                <g class="scalable" transform="scale(2.2,1.8333333333333333)">
+                  <rect
+                    id="v-222"
+                    stroke="none"
+                    fill-opacity="0"
+                    fill="#ffffff"
+                    width="100"
+                    height="60"
+                  ></rect>
+                </g>
+                <text
+                  id="v-223"
+                  font-size="14"
+                  xml:space="preserve"
+                  display="none"
+                  y="0.8em"
+                  fill="#000000"
+                  text-anchor="middle"
+                  font-family="Arial, helvetica, sans-serif"
+                  transform="matrix(1,0,0,1,110,55)"
+                >
+                  <tspan
+                    dy="0"
+                    style="fill-opacity: 0; stroke-opacity: 0;"
+                    class="v-line v-empty-line"
+                  >
+                    -
+                  </tspan>
+                </text>
+              </g>
+            </g>
+            <g
+              model-id="aa396e86-6f3a-4eb7-8433-a81cde3f26b0"
+              id="j_73"
+              class="joint-cell joint-type-html joint-type-html-element joint-element joint-theme-default"
+              data-type="html.Element"
+              fill="#ffffff"
+              stroke="none"
+              transform="translate(215,840)"
+            >
+              <g class="rotatable" id="v-218">
+                <g class="scalable" transform="scale(0.6,1)">
+                  <rect
+                    id="v-219"
+                    stroke="none"
+                    fill-opacity="0"
+                    fill="#ffffff"
+                    width="100"
+                    height="60"
+                  ></rect>
+                </g>
+                <text
+                  id="v-220"
+                  font-size="14"
+                  xml:space="preserve"
+                  display="none"
+                  y="0.8em"
+                  fill="#000000"
+                  text-anchor="middle"
+                  font-family="Arial, helvetica, sans-serif"
+                  transform="matrix(1,0,0,1,30,30)"
+                >
+                  <tspan
+                    dy="0"
+                    style="fill-opacity: 0; stroke-opacity: 0;"
+                    class="v-line v-empty-line"
+                  >
+                    -
+                  </tspan>
+                </text>
+              </g>
+            </g>
+          </g>
+          <g id="v-217" class="joint-tools-container"></g>
+        </svg>
+      </div>
+    </div>
+  </body>
+
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+  <!-- <script src="http://apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script> -->
+  <!-- <script src="./jquery.mousewheel.js"></script> -->
+  <script src="./jquery-ui-draggable.js"></script>
+  <script src="./miniView.js"></script>
+  <script>
+    var miniview = new MiniView(
+      {
+        el: $(".flowchart")
+      }
+    );
+
+    $("#zoomIn").on("click", function() {
+      miniview.setViewZoom("zoomIn");
+    });
+
+    $("#zoomOut").on("click", function() {
+      miniview.setViewZoom("zoomOut");
+    });
+  </script>
+</html>

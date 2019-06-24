@@ -1,0 +1,51 @@
+<html>
+  <head></head>
+  <link rel="stylesheet" href="./miniView.css" />
+  <link rel="stylesheet" href="./flow.css" />
+  <style>
+    .chart-wrap {
+      position: relative;
+      /* width: 600px; */
+      height: 800px;
+      width: 1600px;
+      overflow: hidden;
+      border: 1px solid red;
+    }
+
+    .flowchart {
+      position: relative;
+    }
+  </style>
+  <body>
+    <button id="zoomIn">zoom in</button> <button id="zoomOut">zoom out</button>
+    <div class="chart-wrap">
+      <div class="flowchart">
+        <div
+          style="height: 200px; width: 500px;background-color: aquamarine"
+        ></div>
+      </div>
+    </div>
+  </body>
+
+  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="http://apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+  <script src="./jquery.mousewheel.js"></script>
+  <script src="./miniView.js"></script>
+  <script>
+    var miniview = new MiniView({
+      el: $(".flowchart"),
+      miniSize: {
+        height: 120,
+        width: 200
+      }
+    });
+
+    $("#zoomIn").on("click", function() {
+      miniview.setViewZoom("zoomIn");
+    });
+
+    $("#zoomOut").on("click", function() {
+      miniview.setViewZoom("zoomOut");
+    });
+  </script>
+</html>

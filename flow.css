@@ -1,0 +1,152 @@
+.flowchart {
+  position: relative;
+  /* margin: 20px; */
+}
+.flowchart .start-node,
+.flowchart .end-node {
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  border: 1px solid #d0d0d0;
+  border-radius: 30px;
+  text-align: center;
+  position: absolute;
+  background-color: #fff;
+}
+.flowchart .end-node {
+  border: 1px solid #fd8282;
+}
+.flowchart .spe-node {
+  position: absolute;
+  border: 1px solid #d0d0d0;
+  height: 30px;
+  width: 30px;
+  font-size: 12px;
+  text-align: center;
+  /* line-height: 36px; */
+  line-height: 30px;
+  background-color: #fff;
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.flowchart .spe-node .txt {
+  transform: rotate(-45deg);
+}
+.flowchart .flownode {
+  position: absolute;
+  border: 1px solid #eaeaea;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  width: 220px;
+  background-color: #f3f4f3;
+  border-left: 6px solid #999;
+  /* -webkit-transition: -webkit-box-shadow 0.15s ease-in;
+  -moz-transition: -moz-box-shadow 0.15s ease-in;
+  -o-transition: -o-box-shadow 0.15s ease-in;
+  transition: box-shadow 0.15s ease-in; */
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.flowchart.design .spe-node {
+  border: 1px solid #87d3c2;
+}
+.flowchart.design .start-node,
+.flowchart.design .end-node {
+  border: 1px solid #87d3c2;
+}
+.flowchart.design .flownode {
+  border-left: 6px solid #87d3c2;
+}
+.flowchart .flownode.active {
+  box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.2);
+}
+.flowchart .flownode .header {
+  padding: 5px 5px;
+  background-color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: relative;
+  padding-right: 30px;
+  border-bottom: 1px solid #ddd;
+}
+.flowchart .flownode .header .tk-iconfont {
+  position: absolute;
+  right: 5px;
+  top: 3px;
+  font-size: 18px;
+  color: #999;
+}
+.flowchart .flownode .header .status.tk-iconfont {
+  position: relative;
+  right: 2px;
+  font-size: 14px;
+  top: 1px;
+}
+.flowchart .flownode .state {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  color: green;
+}
+.flowchart .flownode .content {
+  font-size: 12px;
+  padding: 5px 5px;
+  height: 75px;
+  background-color: #fff;
+}
+.flowchart .flownode .content p {
+  margin: 5px 0;
+}
+.flowchart .flownode .content p i {
+  position: relative;
+  top: 1px;
+  margin-right: 3px;
+  font-size: 14px;
+}
+.flowchart .flownode:hover {
+  opacity: 1;
+  box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.2);
+}
+.flowchart .flownode.COMPLETED {
+  border: 1px solid #87d068;
+  border-left: 6px solid #87d068;
+}
+.flowchart .flownode.COMPLETED .header {
+  border-bottom: 1px solid #87d068;
+}
+.flowchart .flownode.COMPLETED .header .status.tk-iconfont {
+  color: #87d068;
+}
+.flowchart .flownode.FAILED {
+  border: 1px solid #ff0000;
+  border-left: 6px solid #ff0000;
+}
+.flowchart .flownode.FAILED .header {
+  border-bottom: 1px solid #ff0000;
+}
+.flowchart .flownode.FAILED .header .status.tk-iconfont {
+  color: #ff0000;
+}
+.flowchart .flownode.EXECUTING {
+  border: 1px solid #4a90e2;
+  border-left: 6px solid #4a90e2;
+}
+.flowchart .flownode.EXECUTING .header {
+  border-bottom: 1px solid #4a90e2;
+}
+.flowchart .flownode.EXECUTING .header .status.tk-iconfont {
+  color: #4a90e2;
+}
+.flowchart .flownode.STOPPED {
+  border: 1px solid #f8d357;
+  border-left: 6px solid #f8d357;
+}
+.flowchart .flownode.STOPPED .header {
+  border-bottom: 1px solid #f8d357;
+}
+.flowchart .flownode.STOPPED .header .status.tk-iconfont {
+  color: #f8d357;
+}

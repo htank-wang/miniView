@@ -1,0 +1,35 @@
+.minimap {
+  border: 1px solid #147afb;
+  z-index: 20;
+  top: 0;
+  right: 0;
+  position: absolute;
+  overflow: hidden;
+}
+
+.minimap .selectWin .selectionWin {
+  position: absolute;
+  background-color: white;
+  opacity: 0.5;
+}
+.minimap .selectWin,
+.minimap .miniview {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.minimap .selectWin {
+  z-index: 5;
+}
+
+.minimap .mainContainer {
+  transform-origin: left top 0;
+  background-color: #d2ddc6;
+}
+
+.minimap .selectWin .selectionWin {
+  background-color: #147afb63;
+  z-index: 10;
+  cursor: move;
+}
